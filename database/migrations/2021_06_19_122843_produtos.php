@@ -32,7 +32,6 @@ class Produtos extends Migration
             $table->string('keywords_seo');
             $table->string('description_seo');
             $table->string('ncm');
-            $table->string('estoque');
             $table->string('sku');
             $table->string('barcode');
             $table->string('imagem');
