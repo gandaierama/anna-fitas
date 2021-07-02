@@ -10,7 +10,7 @@ class UsuariosController extends Controller
     public function list(){
         $objects = Usuarios::all();
         $arr= (array) $objects;
-        return response()->$arr;
+        return $arr;
     }
 
     public function get($id){
