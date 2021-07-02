@@ -17,14 +17,14 @@ class Gateway extends Migration
         Schema::create('gateways', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nome');
-            $table->string('url');
-            $table->string('method');
-            $table->string('body');
-            $table->string('header1');
-            $table->string('header2');
-            $table->string('header3');
-            $table->string('status');
-            $table->string('imagem');
+            $table->string('url')->nullable();
+            $table->string('method')->nullable();
+            $table->string('body')->nullable();
+            $table->string('header1')->nullable();
+            $table->string('header2')->nullable();
+            $table->string('header3')->nullable();
+            $table->string('status')->nullable();
+            $table->string('imagem')->nullable();
             $table->timestamps();
         });
     }

@@ -17,10 +17,10 @@ class Subcategorias extends Migration
         Schema::create('subcategorias', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('titulo');
-            $table->text('descricao');
-            $table->integer('status');
-            $table->string('imagem');
-            $table->integer('id_categoria');
+            $table->text('descricao')->nullable();
+            $table->integer('status')->nullable();
+            $table->string('imagem')->nullable();
+            $table->integer('id_categoria')->nullable();
             $table->timestamps();
         });
     }

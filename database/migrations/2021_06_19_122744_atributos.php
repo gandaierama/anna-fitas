@@ -16,9 +16,9 @@ class Atributos extends Migration
         //
         Schema::create('frete_gratis', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('cep_inicial');
-            $table->string('cep_final');
-            $table->integer('status');
+            $table->string('cep_inicial')->nullable()->nullable();
+            $table->string('cep_final')->nullable()->nullable();
+            $table->integer('status')->nullable()->nullable();
             $table->timestamps();
         });
     }

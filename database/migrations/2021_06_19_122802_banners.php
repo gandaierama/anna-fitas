@@ -16,10 +16,10 @@ class Banners extends Migration
         //
         Schema::create('banners', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('titulo');
-            $table->string('imagem');
-            $table->string('type');
-            $table->integer('status');
+            $table->string('titulo')->nullable();
+            $table->string('imagem')->nullable();
+            $table->string('type')->nullable();
+            $table->integer('status')->nullable();
             $table->timestamps();
         });
     }

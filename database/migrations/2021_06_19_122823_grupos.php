@@ -17,8 +17,8 @@ class Grupos extends Migration
         Schema::create('grupos', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('titulo');
-            $table->string('permissao');
-            $table->integer('status');
+            $table->string('permissao')->nullable();
+            $table->integer('status')->nullable();
             $table->timestamps();
         });
     }

@@ -16,11 +16,11 @@ class Usuarios extends Migration
         //
         Schema::create('usuarios', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('nome');
-            $table->string('sobrenome');
-            $table->string('email');
-            $table->string('senha');
-            $table->string('telefone');
+            $table->string('nome')->nullable();
+            $table->string('sobrenome')->nullable();
+            $table->string('email')->nullable();
+            $table->string('senha')->nullable();
+            $table->string('telefone')->nullable();
             $table->string('celular')->nullable();
             $table->string('cpf')->nullable();
             $table->string('rg')->nullable();

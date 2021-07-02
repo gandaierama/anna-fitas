@@ -17,9 +17,9 @@ class ProdutosPedidos extends Migration
         Schema::create('produtos_pedido', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('id_produto');
-            $table->integer('id_pedido');
-            $table->integer('quantidade');
-            $table->text('atributos');
+            $table->integer('id_pedido')->nullable();
+            $table->integer('quantidade')->nullable();
+            $table->text('atributos')->nullable();
             $table->timestamps();
         });
     }
